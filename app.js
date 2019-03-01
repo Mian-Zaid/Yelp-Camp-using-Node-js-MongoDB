@@ -47,7 +47,8 @@ app.use(function(req,res,next){
 
 app.use(express.static(__dirname+"/public"));   
 app.set("view engine","ejs");
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb+srv://mianzaid:hellfire123@yelpcamp-l9x9g.mongodb.net/admin");
 app.use(bodyParser.urlencoded({extented:true}));
 app.use(methodOverride("_method"));
 
