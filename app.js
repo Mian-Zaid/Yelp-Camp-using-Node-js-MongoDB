@@ -48,8 +48,8 @@ app.use(function(req,res,next){
 app.use(express.static(__dirname+"/public"));   
 app.set("view engine","ejs");
 // mongoose.connect("mongodb://localhost/yelp_camp");
- mongoose.connect("mongodump --host YelpCamp-shard-0/yelpcamp-shard-00-00-l9x9g.mongodb.net:27017,yelpcamp-shard-00-01-l9x9g.mongodb.net:27017,yelpcamp-shard-00-02-l9x9g.mongodb.net:27017 --ssl --username mianzaid --password cout<<hellfire123; --authenticationDatabase admin --db YelpCamp");
-// mongoose.connect("mongodb+srv://mianzaid:hellfire123@yelpcamp-l9x9g.mongodb.net/admin");
+//  mongoose.connect("mongodump --host YelpCamp-shard-0/yelpcamp-shard-00-00-l9x9g.mongodb.net:27017,yelpcamp-shard-00-01-l9x9g.mongodb.net:27017,yelpcamp-shard-00-02-l9x9g.mongodb.net:27017 --ssl --username mianzaid --password cout<<hellfire123; --authenticationDatabase admin --db YelpCamp");
+ mongoose.connect("mongodb+srv://mianzaid:cout<<hellfire123;@yelpcamp-l9x9g.mongodb.net/admin");
 app.use(bodyParser.urlencoded({extented:true}));
 app.use(methodOverride("_method"));
 
